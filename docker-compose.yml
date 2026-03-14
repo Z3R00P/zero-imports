@@ -5,9 +5,9 @@ services:
     restart: always
     environment:
       MYSQL_DATABASE: zeroimports_db
-      MYSQL_ROOT_PASSWORD: admin24
-      MYSQL_USER: pedro
-      MYSQL_PASSWORD: oliveira2804
+      MYSQL_ROOT_PASSWORD:
+      MYSQL_USER: zeroimports_user
+      MYSQL_PASSWORD:
     ports:
       - "3306:3306"
     volumes:
