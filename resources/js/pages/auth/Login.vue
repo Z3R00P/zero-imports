@@ -8,7 +8,6 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Spinner } from '@/components/ui/spinner';
 import AuthBase from '@/layouts/AuthLayout.vue';
-import { register } from '@/routes';
 import { store } from '@/routes/login';
 import { request } from '@/routes/password';
 
@@ -96,18 +95,6 @@ defineProps<{
                     <Spinner v-if="processing" />
                     Log in
                 </Button>
-            </div>
-
-            <div class="text-center text-sm text-muted-foreground">
-                Não tem uma conta?
-                <a
-                    href="https://wa.me/5511999999999"
-                    target="_blank"
-                    class="underline underline-offset-4 hover:text-primary"
-                    :tabindex="5"
-                >
-                    Entre em contato pelo WhatsApp
-                </a>
             </div>
         </Form>
     </AuthBase>
