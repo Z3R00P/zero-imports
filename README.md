@@ -91,19 +91,11 @@ php artisan cache:clear
 
 ## Running the app
 
-### Backend
-
 ```bash
-php artisan serve
+composer run dev
 ```
 
-### Frontend (Vite)
-
-```bash
-npm run dev
-```
-
-Open the URL printed by `php artisan serve`.
+Open the URL `http://127.0.0.1:8000/`.
 
 ## Docker (MySQL)
 
